@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <!--   <link href="../Font/BlackCastleMF.ttf" rel="stylesheet"> -->
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Inscription</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="../Images/pathfinder_logo.png" alt="logo pathfinder">
+            <h3>Le MJ n'est pas sadique, c'est un artiste incompris</h3>
+            <nav>
+                <ul>
+                    <li><img id="potion" src="../Images/potion.png" alt="Icone de potion">
+                        <ul class="sous">
+                            <li><a href="../index.html">Accueil</a></li>
+                            <li><a href="page-1.html">Ascendances</a></li>
+                            <li><a href="page-2.html">Classes</a></li>
+                            <li><a href="page-3.html">Familiers</a></li>
+                            <li><a href="#">Inscription</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>  
+
+        <h2 id="titre">Création du personnage</h2>
+        <h3 class="chapo">Venez vous inscrire, définissez en quelques clics votre personnage et rejoignez nous pour de superbes aventures.</h3>
+            <table class="conteneur-texte">
+            <form method="post">
+                <tr>
+                    <td><label class="">Nom du joueur :</label>
+                    <input type="text" id="nom" name="nom">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Nom du personnage :</label>
+                    <input type="text" id="pseudo" name="pseudo">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Sexe :</label>
+                            <input type="radio" id="h" name="sexe" value="homme"> Homme
+                            <input type="radio" id="f" name="sexe" value="femme"> Femme
+                            <input type="radio" id="n" name="sexe" value="neutre"> Neutre
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Ascendance :</label>
+                        <select id="race" name="race">
+                        <option value="elfe">Elfe</option>
+                        <option value="gnome">Gnome</option>
+                        <option value="gobelin">Gobelin</option>
+                        <option value="humain">Humain</option>
+                        <option value="halfelin">Halfelin</option>
+                        <option value="nain">Nain</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Classe :</label>
+                        <select id="classe" name="classe">
+                        <option value="alchimiste">Alchimiste</option>
+                        <option value="barbare">Barbare</option>
+                        <option value="barde">Barde</option>
+                        <option value="champion">Champion</option>
+                        <option value="druide">Druide</option>
+                        <option value="ensorceleur">Ensorceleur</option>
+                        <option value="guerrier">Guerrier</option>
+                        <option value="magicien">Magicien</option>
+                        <option value="moine">Moine</option>
+                        <option value="pretre">Prêtre</option>
+                        <option value="rodeur">Rôdeur</option>
+                        <option value="roublard">Roublard</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Familier :</label>
+                        <select id="pet" name="pet">
+                        <option value="blaireau">Blaireau</option>
+                        <option value="chat">Chat</option>
+                        <option value="cheval">Cheval</option>
+                        <option value="dromeosaure">Droméosaure</option>
+                        <option value="loup">Loup</option>
+                        <option value="oiseau">Oiseau</option>
+                        <option value="ours">Ours</option>
+                        <option value="serpent">Serpent</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Arme de départ :</label>
+                        <select id="arme" name="arme">
+                        <optgroup label="Arme corps-à-corps">
+                        <option value="dague">Dague</option>
+                        <option value="epee">Epée</option>
+                        <option value="baton">Bâton</option>
+                        <option value="hache">Hache</option>
+                        <option value="masse">Masse</option>
+                        <option value="fouet">Fouet</option>
+                        <option value="hallebarde">Hallebarde</option>
+                        </optgroup>
+                        <optgroup label="Arme à distance">
+                        <option value="arc">Arc</option>
+                        <option value="arbalete">Arbalète</option>
+                        <option value="lance">Lance</option>
+                        <option value="fronde">Fronde</option>
+                        <option value="sarbacane">Sarbacane</option>
+                        </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Armure de départ :</label>
+                        <select id="armure" name="armure">
+                        <optgroup label="Sans armure">
+                        <option value="sans armure">Sans armure</option>
+                        <option value="vetements d'explorateur">Vêtements d'explorateur</option>
+                        </optgroup>
+                        <optgroup label="Armure légère">
+                        <option value="armure matelassee">Armure matelassée</option>
+                        <option value="cuir">Cuir</option>
+                        <option value="cuir cloute">Cuir clouté</option>
+                        <option value="chemise de maille">Chemise de maille</option>
+                        </optgroup>
+                        <optgroup label="Armure intermédiaire">
+                        <option value="armure de peau">Armure de peau</option>
+                        <option value="armure decaille">Armure d'écailles</option>
+                        <option value="cotte de maille">Cotte de maille</option>
+                        <option value="cuirasse">Cuirasse</option>
+                        </optgroup>
+                        <optgroup label="Armure lourde">
+                        <option value="clibanion">Clibanion</option>
+                        <option value="armure de plates">Armure de plates</option>
+                        <option value="harnois">Harnois</option>
+                        </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Adresse mail :</label>
+                        <input type="email" id="mail" name="mail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Commentaire :</label>
+                        <textarea id="commentaire" name="commentaire"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Envoyer">
+                    </td>
+                </tr>
+            </form>
+            </table>    
+
+
+        <footer>
+            <p class="foot pied">“J'ai vécu au péril de ma vie.”</p>
+            <p class="foot pied-pc">“Et si on le bute, tu crois pas que ça va diminuer ses forces ?”</p>
+            <p class="foot">Tous les contenus ont été pris sur <a href="https://2e.aonprd.com/">Archives of Nethys</a>, <a href="https://www.pathfinder-fr.org/"> Pathfinder-FR</a> et sur <a href="https://pathfinderwiki.com/">PathfinderWiki</a>.</p>
+            <p class="foot">© copyright 2000, Wizards of the coast.</p>
+            <p class="foot">Black books editions</p>
+        </footer>
+    </body>
+</html>
